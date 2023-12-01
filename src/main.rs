@@ -1,6 +1,9 @@
 ///associate greetings module with this crate
 mod greetings;
 mod how_to_hold_data_for_operations;
+use how_to_hold_data_for_operations::primitive;
+use how_to_hold_data_for_operations::derived;
+use primitive::{compound, scalar};
 extern crate hello_world_lib;
 
 ///Optionally load each member of greetings
@@ -23,5 +26,9 @@ println!("{}", english::default_greeting());
 println!("{}", spanish::default_greeting());
 println!("{}", french::default_greeting());
 println!("{}", hello_world_lib::greeting_from_lib());
+//scalar::scalar();
+compound::main();
+derived::triangle::run2();
+derived::circle::run2();
 
 }
